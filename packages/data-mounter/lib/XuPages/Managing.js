@@ -45,8 +45,12 @@ const providers = [
 ];
 const ProviderAccordion = ({ name, type, image, onRemove }) => {
     const [checked, setChecked] = (0, react_1.useState)(false);
+    const [mount, setMount] = (0, react_1.useState)(false);
     const handleCheckConnection = () => {
         setChecked(true);
+    };
+    const handleMount = () => {
+        setMount(true);
     };
     const handleRemoveRemote = () => {
         onRemove(name);
@@ -57,8 +61,10 @@ const ProviderAccordion = ({ name, type, image, onRemove }) => {
             react_1.default.createElement("h4", null, type),
             react_1.default.createElement("img", { src: image, alt: "Provider", style: { width: '100%' } }),
             checked && react_1.default.createElement(material_1.Alert, { severity: "success" }, "Remote checked"),
+            mount && react_1.default.createElement(material_1.Alert, { severity: "info" }, "Path: /tempMount/onedrive"),
             react_1.default.createElement("div", { style: { display: 'flex', gap: '10px', marginTop: '10px' } },
                 react_1.default.createElement(material_1.Button, { variant: "outlined", onClick: handleCheckConnection }, "Check connection"),
+                react_1.default.createElement(material_1.Button, { variant: "outlined", onClick: handleMount }, "Mount to local"),
                 react_1.default.createElement(material_1.Button, { variant: "outlined", onClick: handleRemoveRemote }, "Remove remote")))));
 };
 const AccordionPage = () => {

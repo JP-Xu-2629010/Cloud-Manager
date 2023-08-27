@@ -39,12 +39,12 @@ const Homepage = ({ setN }) => {
             react_1.default.createElement("br", null),
             react_1.default.createElement("br", null),
             react_1.default.createElement("div", { style: middleLineStyle },
-                react_1.default.createElement(material_1.Button, { variant: 'outlined', style: buttonStyle, onClick: handleMountingClick }, "Mounting New Cloud Storage")),
+                react_1.default.createElement(material_1.Button, { variant: 'outlined', style: buttonStyle, onClick: handleMountingClick }, "Create New Remote")),
             react_1.default.createElement("br", null),
             react_1.default.createElement("div", { style: middleLineStyle },
                 react_1.default.createElement(material_1.Button, { variant: 'outlined', style: buttonStyle, onClick: handleDataTransmissionClick }, "Data Transmission")),
             react_1.default.createElement("br", null),
             react_1.default.createElement("div", { style: middleLineStyle },
-                react_1.default.createElement(material_1.Button, { variant: 'outlined', style: buttonStyle, onClick: handleManagingClick }, "Managing Cloud Storage")))));
+                react_1.default.createElement(material_1.Button, { variant: 'outlined', style: buttonStyle, onClick: handleManagingClick }, "Remote Management")))));
 };
 exports.default = Homepage;

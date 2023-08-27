@@ -26,9 +26,14 @@ interface ProviderAccordionProps {
 
 const ProviderAccordion: React.FC<ProviderAccordionProps> = ({ name, type, image, onRemove }) => {
   const [checked, setChecked] = useState(false);
+  const [mount, setMount] = useState(false);
 
   const handleCheckConnection = () => {
     setChecked(true);
+  };
+
+  const handleMount = () => {
+    setMount(true);
   };
 
   const handleRemoveRemote = () => {
@@ -44,9 +49,13 @@ const ProviderAccordion: React.FC<ProviderAccordionProps> = ({ name, type, image
         <h4>{type}</h4>
         <img src={image} alt="Provider" style={{ width: '100%' }} />
         {checked && <Alert severity="success">Remote checked</Alert>}
+        {mount && <Alert severity="info">Path: /tempMount/onedrive</Alert>}
         <div style={{ display: 'flex', gap: '10px', marginTop: '10px' }}>
           <Button variant="outlined" onClick={handleCheckConnection}>
             Check connection
+          </Button>
+          <Button variant="outlined" onClick={handleMount}>
+            Mount to local
           </Button>
           <Button variant="outlined" onClick={handleRemoveRemote}>
             Remove remote

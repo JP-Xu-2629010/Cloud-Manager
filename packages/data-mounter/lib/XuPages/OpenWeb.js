@@ -26,7 +26,7 @@ const middleLineStyle = {
 const OpenWeb = ({ setN, num }) => {
     const handleOpenLinkClick = () => {
         setN(10 + num);
-        const urlOD = 'https://login.microsoftonline.com/common/oauth2/v2.0/authorize?access_type=offline&client_id=b15665d9-eda6-4092-8539-0eec376afd59&redirect_uri=http%3A%2F%2Flocalhost%3A53682%2F&response_type=code&scope=Files.Read+Files.ReadWrite+Files.Read.All+Files.ReadWrite.All+Sites.Read.All+offline_access&state=fPiwOAGb8zzoxsThO4R2HQ'; // Replace with the desired URL
+        const urlOD = 'https://login.microsoftonline.com/common/oauth2/v2.0/authorize?access_type=offline&client_id=b15665d9-eda6-4092-8539-0eec376afd59&redirect_uri=http%3A%2F%2Flocalhost%3A53682%2F&response_type=code&scope=Files.Read+Files.ReadWrite+Files.Read.All+Files.ReadWrite.All+Sites.Read.All+offline_access&state=lgPz6Ln-8gNHnpEe_MWdlg'; // Replace with the desired URL
         const urlGD = 'https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?access_type=offline&client_id=202264815644.apps.googleusercontent.com&redirect_uri=http%3A%2F%2F127.0.0.1%3A53682%2F&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive&state=MtA-wb0PBjxJ47wSFEVAuA&service=lso&o2v=1&flowName=GeneralOAuthFlow';
         if (num == 31) {
             window.open(urlOD, '_blank'); // Opens the URL in a new tab/window

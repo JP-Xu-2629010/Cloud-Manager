@@ -48,7 +48,7 @@ const Homepage: React.FC<HomepageProps> = ({ setN }) => {
                 <br />      
                 <br />  
                 <div style={middleLineStyle}>
-                    <Button variant='outlined' style={buttonStyle} onClick={handleMountingClick}>Mounting New Cloud Storage</Button>
+                    <Button variant='outlined' style={buttonStyle} onClick={handleMountingClick}>Create New Remote</Button>
                 </div>
                 <br /> 
                 <div style={middleLineStyle}>
@@ -56,7 +56,7 @@ const Homepage: React.FC<HomepageProps> = ({ setN }) => {
                 </div>
                 <br /> 
                 <div style={middleLineStyle}>
-                    <Button variant='outlined' style={buttonStyle} onClick={handleManagingClick}>Managing Cloud Storage</Button>
+                    <Button variant='outlined' style={buttonStyle} onClick={handleManagingClick}>Remote Management</Button>
                 </div>
             </div>
         </ThemeProvider>
