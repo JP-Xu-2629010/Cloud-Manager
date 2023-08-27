@@ -1,7 +1,7 @@
 # Importent
 
-This is a personal project base on rclone-data-moounter, for any kind of usage, please visit the original project.
-Link: ounter: https://github.com/QCDIS/r
+This is a personal project based on rclone-data-mounter, please visit the original project for any use.
+Link: https://github.com/QCDIS/rclone-data-mounter
 
 
 
